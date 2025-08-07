@@ -1,0 +1,45 @@
+.notFoundContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background: #f8f9fa;
+  color: #333;
+}
+
+.notFoundAnimation {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #ff6b6b;
+  animation: bounce 1.2s infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.notFoundContainer button {
+  padding: 10px 20px;
+  background-color: #0366d6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #024b9c;
+}

@@ -1,0 +1,96 @@
+@media screen and (max-width: 1024px) {
+  .links a {
+    margin-left: 1rem;
+  }
+
+  .right-header h1 {
+    font-size: 2rem;
+  }
+
+  .cartProductImg img {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logins {
+    margin-top: 0.5rem;
+  }
+
+  .header .flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .links {
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .right-header {
+    padding: 0;
+  }
+
+  .left-header img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cartProductContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .buttons button {
+    padding: 0.2rem 0.5rem;
+  }
+
+  .addToCart button {
+    padding: 0.4rem;
+  }
+
+  .cartContainer {
+    flex-direction: column;
+  }
+
+  .cartDiv {
+    width: 100% !important;
+    margin-bottom: 1rem;
+  }
+}
+
+/* footer */
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .footer-section {
+    flex: 1 1 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer-section h4 {
+    font-size: 1.1rem;
+  }
+
+  .footer-section p,
+  .footer-section li,
+  .footer-section a {
+    font-size: 0.9rem;
+  }
+}
