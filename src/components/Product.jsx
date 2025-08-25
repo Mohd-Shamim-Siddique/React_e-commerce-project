@@ -28,8 +28,15 @@ const Product = () => {
     }
   };
 
-  if (isLoading) return <p style={{ textAlign: 'center', fontWeight: 'bolder', marginBlock: '20px' }}>Loading...</p>
-  if (isError) return <p style={{ textAlign: 'center', fontWeight: 'bolder', marginBlock: '20px' }}>
+  if (isLoading) return <p style={{
+    textAlign: 'center', fontWeight: 'bolder', marginBlock: '20px',
+    fontSize: '30px'
+  }}>Loading...</p>
+  
+  if (isError) return <p style={{
+    textAlign: 'center', fontWeight: 'bolder', marginBlock: '20px',
+    fontSize: '30px'
+  }}>
     something went wrong!</p>
 
 

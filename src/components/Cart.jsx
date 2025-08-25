@@ -7,16 +7,15 @@ import { decreaseQuantity, increaseQuantity, removeItems } from '../toolkit/slic
 const Cart = () => {
   const dispatch = useDispatch()
   const cartItems = useSelector(state => state.cart)
-  console.log(cartItems);
 
   const cartTotal = cartItems.reduce((acc, curr) => acc + (curr.quantity * curr.price), 0)
-  console.log(cartTotal);
 
 
   return (
     <div className='container'>
       {cartItems.length === 0 ? '' :
-        <h2 style={{ textAlign: 'center', marginTop: '20px' }}>${(cartTotal).toFixed(2)}</h2>}
+        <h2 style={{ textAlign: 'center', marginTop: '20px', fontWeight: 'bold', fontSize: '20px' }}>
+          ${(cartTotal).toFixed(2)}</h2>}
       <ul className='cartItemContainer container'>
         {cartItems.map((item) => (
           <li key={item.id}>
@@ -64,7 +63,6 @@ const Cart = () => {
     </div >
   )
 }
-
 
 
 export default Cart
